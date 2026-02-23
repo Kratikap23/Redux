@@ -1,18 +1,17 @@
-export const depositeMoney =(amount)=>{
-    return (dispatch)=>{
+export const depositeMoney = (amount)=>{
+    return(dispatch)=>{
         dispatch({
-            type: 'deposit',
+            type: 'deposite',
             payload: amount
-    })
+        })
     }
 }
 
-
-export const withdrowMoney =(amount)=>{
-    return (dispatch)=>{
+export const withdrawMoney = (amount)=>{
+    return(dispatch)=>{
         dispatch({
             type: 'withdraw',
             payload: amount
-    })
+        })
     }
 }
